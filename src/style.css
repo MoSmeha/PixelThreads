@@ -64,6 +64,10 @@ h6 {
 
 .navbar {
   /* position: fixed; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
   width: 100%;
   z-index: 999;
   padding: 25px 0;
@@ -75,12 +79,14 @@ h6 {
 }
 
 .navbar .content {
+  margin: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .navbar .logo a {
+  margin-left: 2em;
   color: #fff;
   font-size: 30px;
   font-weight: 600;
@@ -120,10 +126,10 @@ h6 {
 
 /* Header */
 header {
-  height: calc(100vh - var(--navbar-height));
+  /* height: calc(100vh - var(--navbar-height)); */
   width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("./images/clothes2.png");
+    url("/images/clothes2.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -143,7 +149,7 @@ header {
   flex-direction: column;
   justify-content: space-around;
   /* gap: 4rem; */
-  height: 90.5vh;
+  height: 92vh;
 }
 
 @keyframes fadeIn {

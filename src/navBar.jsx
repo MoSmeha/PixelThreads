@@ -16,10 +16,10 @@ const Navbar = () => {
 
   return (
     <nav className={`navbar } ${navbarOpen ? "show" : ""}`}>
+      <div className="logo">
+        <Link to="/">Pixel Threads</Link>
+      </div>
       <div className="content">
-        <div className="logo">
-          <Link to="/">Pixel Threads</Link>
-        </div>
         <ul className={`menu-list ${navbarOpen ? "show" : ""}`}>
           <div className="icon cancel-btn" onClick={handleCancelClick}>
             <i className="fas fa-times"></i>

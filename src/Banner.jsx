@@ -2,7 +2,7 @@ import Typewriter from "typewriter-effect";
 import { Link } from "react-router-dom";
 function Banner() {
   return (
-    <header id="home">
+    <header>
       <div className="header-content">
         <h1 className="centered BannerTitle">Fashion Redefined in Graphics!</h1>
 
