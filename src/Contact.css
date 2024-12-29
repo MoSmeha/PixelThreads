@@ -1,0 +1,123 @@
+.contact-form-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 5px; /* Reduced padding */
+}
+
+.contact-form-wrapper {
+  background: white;
+  border-radius: 8px;
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
+  padding: 15px; /* Reduced padding */
+}
+
+h2 {
+  font-size: 20px; /* Slightly smaller font size */
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 12px; /* Reduced margin */
+}
+
+.form-group {
+  margin-bottom: 12px; /* Reduced margin */
+}
+
+label {
+  display: block;
+  font-size: 12px; /* Smaller font size */
+  font-weight: 500;
+  color: #666;
+  margin-bottom: 3px; /* Reduced margin */
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 6px; /* Reduced padding */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px; /* Kept font size smaller */
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #f75959;
+  box-shadow: 0 0 0 1px rgba(74, 144, 226, 0.2); /* Reduced shadow thickness */
+}
+
+input.error,
+textarea.error {
+  border-color: #f75959;
+}
+
+.error-message {
+  color: #f75959;
+  font-size: 11px; /* Reduced font size */
+  margin-top: 2px; /* Reduced margin */
+}
+
+.submit-button {
+  width: 100%;
+  padding: 8px; /* Reduced padding */
+  background-color: #f75959;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px; /* Reduced font size */
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.submit-button:hover:not(:disabled) {
+  background-color: rgb(207, 21, 21);
+}
+
+.submit-button:disabled {
+  background-color: #ff4b51;
+  cursor: not-allowed;
+}
+
+.button-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px; /* Reduced gap */
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.success-message {
+  padding: 12px; /* Reduced padding */
+  background-color: #f6ffed;
+  border: 1px solid #b7eb8f;
+  border-radius: 4px;
+  color: #52c41a;
+  text-align: center;
+  font-size: 14px; /* Slightly smaller font size */
+}
+
+@media (max-width: 480px) {
+  .contact-form-wrapper {
+    padding: 10px; /* Reduced padding for mobile */
+  }
+
+  input,
+  textarea {
+    font-size: 12px; /* Smaller font size for mobile */
+  }
+}

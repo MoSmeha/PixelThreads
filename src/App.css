@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-size: 15px;
+}
+
+.card {
+  position: relative;
+  width: 15em;
+  height: 24.2em;
+  background: #f75959;
+  border-radius: 20px;
+  overflow: hidden;
+  display: inline-block;
+  margin: 2em;
+  box-shadow: 0.3em 0.3em;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  width: 100%;
+  height: 100%;
+  background: #fbeacb;
+  transform: skewY(350deg);
+  transition: 0.5s;
+}
+
+.card:hover::before {
+  top: -70%;
+  transform: skewY(375deg);
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 6em;
+  color: rgba(0, 0, 0, 0.1);
+}
+.btn-con {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.card .imgBox {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1em;
+  z-index: 1;
+}
+
+.card .contentBox {
+  position: relative;
+  padding: 1.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.card .contentBox #name {
+  font-size: 1em;
+  color: #edbc81;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 0.5em;
+}
+
+.card .contentBox #category {
+  font-size: 0.9em;
+  color: #222;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 0.5em;
+}
+
+.card .contentBox #price,
+#color,
+#description {
+  font-size: 0.6em;
+  color: white;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-top: 0.5em;
+  text-align: center;
+}
+
+.card .contentBox .delete,
+.update {
+  position: relative;
+  top: 4em;
+  opacity: 0;
+  padding: 0.5em 1em;
+  margin-top: 0.8em;
+
+  text-decoration: none;
+  background: #d5d5d5;
+  border-radius: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.5s;
+  font-size: 0.8em;
+}
+
+.card:hover .contentBox .delete {
+  top: 0;
+  opacity: 1;
+}
+
+.card .contentBox .update {
+  background: #edbc81;
+}
+.card:hover .contentBox .update {
+  top: 0;
+  opacity: 1;
+}
+.Cloth {
+  height: 10em;
+  width: auto;
+}
+
+.cardsContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  align-items: center;
+}
+
+/* form */
+#formCon {
+  height: 28em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  margin: 0 auto;
+  background-color: #fbeacb;
+  border-radius: 0.5em;
+  box-shadow: 5px 5px;
+  margin-bottom: 2em;
+  padding-top: 1.5em;
+}
+
+#addItemForm {
+  border-radius: 0.5em;
+  padding: 1em;
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  justify-content: center;
+  align-items: center;
+}
+
+#addItemForm input[type="text"],
+#addItemForm #cat {
+  width: 90%;
+  padding: 0.4em;
+  margin: 0 0.3em;
+  border-radius: 0.4em;
+  border: none;
+  height: 2em;
+}
+#addItemForm button {
+  padding: 0.5em 1em;
+  margin-top: 0.3em;
+
+  text-decoration: none;
+  background: #edbc81;
+  border-radius: 1.5em;
+  width: fit-content;
+}
+input {
+  display: block;
+}

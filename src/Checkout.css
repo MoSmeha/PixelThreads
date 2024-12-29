@@ -1,0 +1,194 @@
+/* Container Styles */
+.container {
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 20px;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Section Styles */
+.section {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+/* Heading Styles */
+.heading {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Subheading Styles */
+.subheading {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: #444;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+/* Form Styles */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Row Styles */
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  align-items: start;
+}
+
+/* Form Group Styles */
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Label Styles */
+.label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
+}
+
+/* Input Styles */
+.input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Select Styles */
+.select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Button Styles */
+.button {
+  padding: 14px 28px;
+  background-color: #f75959;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* Summary Styles */
+.summary {
+  margin-top: 30px;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+/* Summary Row Styles */
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* Total Styles */
+.total {
+  font-weight: 600;
+  font-size: 18px;
+  border-bottom: none;
+}
+
+/* Overlay Styles */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Dialog Styles */
+.dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  width: 90%;
+  max-width: 400px;
+}
+
+/* Dialog Title Styles */
+.dialogTitle {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+/* Dialog Content Styles */
+.dialogContent {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+/* Dialog Buttons Styles */
+.dialogButtons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+/* Cancel Button Styles */
+.cancelButton {
+  background-color: #6c757d;
+}
+
+/* Success Button Styles */
+.successButton {
+  background-color: #28a745;
+}
+
+/* Spinner Styles */
+.spinner {
+  animation: spin 1s linear infinite;
+}
+
+/* Keyframes for Spinner */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
