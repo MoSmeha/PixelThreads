@@ -121,6 +121,7 @@
 @media (max-width: 1024px) {
   .about-us-container {
     flex-direction: column;
+    overflow: auto;
   }
 
   .about-us-image-container,

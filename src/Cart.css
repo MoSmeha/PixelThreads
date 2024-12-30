@@ -2,11 +2,10 @@
 .cartWrapper {
   width: 100%;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 20px auto;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  margin-top: 20px;
   background-color: #fff;
 }
 
@@ -77,6 +76,7 @@
   display: flex;
   align-items: center;
   gap: 5px;
+  white-space: nowrap;
 }
 
 /* Quantity adjustment button styles */
@@ -87,6 +87,10 @@
   border-radius: 4px;
   cursor: pointer;
   color: #212529;
+  min-width: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Delete button styles */
@@ -101,6 +105,9 @@
   width: 40px;
   text-align: center;
   font-size: 18px;
+  padding: 4px;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
 }
 
 /* Footer styles */
@@ -111,10 +118,128 @@
   margin-top: 20px;
   padding-top: 20px;
   border-top: 1px solid #eee;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
 .cartTotal {
   font-size: 24px;
   font-weight: bold;
   color: #212529;
+}
+
+/* Tablet Responsive Styles */
+@media screen and (max-width: 768px) {
+  .cartWrapper {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .cartItem {
+    padding: 15px;
+  }
+
+  .cartItemName {
+    font-size: 18px;
+  }
+
+  .cartItemPrice {
+    font-size: 16px;
+  }
+
+  .itemControls {
+    gap: 10px;
+  }
+
+  .cartTitle {
+    font-size: 22px;
+  }
+
+  .cartTotal {
+    font-size: 22px;
+  }
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 480px) {
+  .cartWrapper {
+    margin: 5px;
+    padding: 10px;
+  }
+
+  .cartItem {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .cartItemInfo {
+    padding-right: 0;
+    width: 100%;
+  }
+
+  .itemControls {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .cartItemName {
+    font-size: 16px;
+  }
+
+  .cartItemPrice {
+    font-size: 15px;
+  }
+
+  .cartHeader {
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+  }
+
+  .cartTitle {
+    font-size: 20px;
+  }
+
+  .cartTotal {
+    font-size: 20px;
+  }
+
+  .cartFooter {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .primaryButton {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .quantityInput {
+    width: 36px;
+    font-size: 16px;
+  }
+
+  .adjustButton {
+    padding: 4px 8px;
+  }
+}
+
+/* Small Mobile Responsive Styles */
+@media screen and (max-width: 320px) {
+  .cartItem {
+    padding: 10px;
+  }
+
+  .itemControls {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .removeButton {
+    margin-left: 0;
+    margin-top: 8px;
+  }
 }

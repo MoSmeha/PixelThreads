@@ -126,17 +126,19 @@ h6 {
 
 /* Header */
 header {
-  /* height: calc(100vh - var(--navbar-height)); */
   width: 100%;
+  min-height: 92vh; /* Changed from fixed height to min-height */
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("/images/clothes2.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed; /* Added to prevent image scaling issues */
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+  /* Added to account for fixed navbar height */
 }
 
 .header-content {
@@ -147,9 +149,9 @@ header {
   animation: fadeIn 1s ease-in;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  /* gap: 4rem; */
-  height: 92vh;
+  justify-content: center; /* Changed from space-around */
+  gap: 2rem; /* Added explicit gap */
+  min-height: 92vh; /* Changed from height to min-height */
 }
 
 @keyframes fadeIn {
@@ -469,6 +471,7 @@ header {
     text-align: center;
     background: #222;
     transition: all 0.3s ease;
+    z-index: 9999; /* Added this line */
   }
   .navbar.show .menu-list {
     left: 0%;
@@ -486,6 +489,25 @@ header {
   }
   body {
     font-size: 12px;
+  }
+  .navbar {
+    /* Changed from static */
+    width: 100%;
+    top: 0;
+    z-index: 9999; /* Increased z-index */
+  }
+  header {
+    min-height: 92vh; /* Adjusted to account for mobile navbar */
+    margin-top: 0; /* Remove margin since navbar is fixed */
+  }
+
+  .header-content {
+    min-height: 92vh;
+    padding: 4em 2em; /* Increased padding for better mobile spacing */
+  }
+
+  .BannerTitle {
+    font-size: 3em; /* Reduced font size for mobile */
   }
 }
 
